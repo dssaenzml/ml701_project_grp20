@@ -1,5 +1,5 @@
 # Self-supervised Approach for Retinal OCT Scan Classification using SimCLR
-## Imports & Module Loading
+## Imports & Module Initialization
 * Step 1
 * Step 2
 ## Finetuning & Evaluation
