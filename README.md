@@ -6,6 +6,7 @@
 * Step 1
 * Step 2
 ## Saving & Loading
+To load the pre-trained OCTModel use the link: https://drive.google.com/file/d/1MPR5ZQUeLjkwKvEhu2_MuMLL91wirYeR/view?usp=sharing
 * Step 1
 * Step 2
 ## Serving the model
