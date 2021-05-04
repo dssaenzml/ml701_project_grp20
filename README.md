@@ -6,7 +6,7 @@ Authors: Diego Saenz, Faris AlMalik, Abdulwahab Sahyoun
 
 
 
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/abdu355/ml701_project_grp20/blob/main/ml701_Proj_Final.ipynb)
 ## Imports & Module Initialization
 * Step 1
 * Step 2
