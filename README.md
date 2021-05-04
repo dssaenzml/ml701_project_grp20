@@ -1,6 +1,6 @@
 # Self-supervised Approach for Retinal OCT Scan Classification using SimCLR
 
-MBZUAI, Abu Dhabi, UAE ![alt text](https://mbzuai.ac.ae/application/themes/mbzuai/dist/images/mbzuai_logo.png)
+![alt text](https://mbzuai.ac.ae/application/themes/mbzuai/dist/images/mbzuai_logo.png)
 
 Authors: Diego Saenz, Faris AlMalik, Abdulwahab Sahyoun 
 
