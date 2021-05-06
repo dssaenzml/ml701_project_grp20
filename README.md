@@ -16,8 +16,8 @@ Authors: Diego Saenz, Faris AlMalik, Abdulwahab Sahyoun
 
 ## Finetuning & Evaluation
 1. Download the following datasets & add them to your Google Drive for loading:
-  - Mendeley training and testing dataset (Kermany et al. [8]): <link_to_drive>
-  - Duke University testing dataset (Srinivasan et al. [14]) + Github testing dataset (Wintergerst et al. [16]): <link_to_drive>
+  - Mendeley training and testing dataset (Kermany et al. [8]): [Train & Test Dataset link](https://drive.google.com/drive/folders/1YBqEoQSwSlyB_m4f8TeyV9BpkeSK46Ne?usp=sharing)
+  - Duke University testing dataset (Srinivasan et al. [14]) + Github testing dataset (Wintergerst et al. [16]): [Test Dataset link](https://drive.google.com/drive/folders/1SOjrG_85785TzWiXE-usTblIW9f4EX_0?usp=sharing)
 2. Initialize `OCTDataModule` & Image Transformer `transforms.Compose`
 3. Check a sample of the dataset using 
   * `ds_train = oct_data.oct_train` 
