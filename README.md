@@ -8,6 +8,8 @@ Authors: Diego Saenz, Faris AlMalik, Abdulwahab Sahyoun
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/abdu355/ml701_project_grp20/blob/main/ml701_Proj_Final.ipynb)
 
+![alt text](https://github.com/abdu355/ml701_project_grp20/blob/main/OCT%20Examples/layer_gradcam_ex.png)
+
 ## Imports & Initialization
 1. Install packages with pip: 
   * `!pip install pytorch-lightning image comet-ml captum flask_compress Pillow`
