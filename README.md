@@ -29,7 +29,7 @@ You can also load the data folders as a shortcut in your GDrive.
   * Encoder/Base Model: Transfer weights from simCLR to the base encoder ` self.base_model = SimCLR.load_from_checkpoint(self.hparams.embeddings_path, strict=False)`   
   * For the optimizer use: `Adagrad, SGD, Adam, LBFGS, RMSProp, Adamax` 
   * LR Scheduler: `OneCycleLR`
-5. Define Hyperparams:
+5. Define Hyper-parameters:
 `hparams = Namespace(
     learning_rate=1e-3,
     freeze_base=True,
@@ -43,7 +43,7 @@ You can also load the data folders as a shortcut in your GDrive.
     arch='resnet50',
     frac_train_images=frac_train_images
 )`
-6. Begin Training & Finetuning 
+6. Begin Training & Fine-tuning 
 `trainer = pl.Trainer(max_epochs=hparams.max_epochs,
                      progress_bar_refresh_rate=20,
                      gpus=1,
@@ -53,7 +53,7 @@ You can also load the data folders as a shortcut in your GDrive.
                                 lr_logger ])
 trainer.fit(model_tuned, datamodule=oct_data)`
 
-### Evalutation
+### Evaluation
 For evaluating model performance, head to the "Evaluation" section in the notebook:
 1. Define `evaluate` function
 2. run the sklearn methods: `confusion_matrix` and `classification_report`. Ignore `comet_logger` if it is not used.
@@ -63,7 +63,7 @@ To load the pre-trained OCTModel use the link: https://drive.google.com/file/d/1
 
 ### Saving:
 1. The model is saved in 2 formats after training is complete using `trainer.save_checkpoint('octmodel.ckpt')` and `torch.save(model_tuned.state_dict(), 'octmodel')`
- * For additional finetuning, use the checkpoint format `octmodel.ckpt` to load the model and continue training. 
+ * For additional fine-tuning, use the checkpoint format `octmodel.ckpt` to load the model and continue training. 
  * For serving the model, use the `octmodel` zipfile-based format output by `torch.save`.
 
 ### Loading: 
