@@ -76,7 +76,15 @@ drive.mount('/content/drive')`
 
 
 ## Serving the model
-Make sure `model_loaded` is initialized by Loading the model from the previous section. Refer to "Load Trained Model" section in the notebook.
+### Using Docker + Streamlit
+1. Fork or import this repo https://github.com/abdu355/oct-app
+2. Upload the saved `octmodel` to an object store service (e.g. AWS S3) and use it's URL in `def get_classifier()` when initializaing the model.
+3. Build a fastapi image: `docker build --file fastapi .` 
+4. Push the docker image to your preferred orchestration service: ELB, Heroku, or just use an AWS instance and deploy. Make sure the correct port is exposed.
+5. Add the url of the new endpoint to the Streamlit app Secrets file as `fastapi_url = "http://<your_url>"`
+
+### Using Collab + Streamlit
+Make sure `model_loaded` is initialized by loading the model from the previous section. Refer to "Load Trained Model" section in the notebook. You can also use your `model_tuned` trained in the notebook.
 1. `!pip install flask-ngrok flask==0.12.2 Werkzeug==0.16.1`
 2. Run the Flask server at the end of the notebook under "Serve model" section
 3. Fork or import this repo https://github.com/abdu355/oct-app
